@@ -1,0 +1,17 @@
+#include <iostream>
+
+int main()
+{
+    using namespace std;
+    float x;
+    cin >> x;
+    int n;
+    cin >> n;
+    float x1 = 1, n1 = 1, rez = 1.0;
+    for (int i = 1; i <= n; ++i) {
+        n1 *= float(i);
+        x1 *= x;
+        rez += x1 / n1;
+    }
+    cout << rez;
+}
