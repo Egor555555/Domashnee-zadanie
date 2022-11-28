@@ -12,11 +12,10 @@ void Solve()
             x = n % 10;
             n = n / 10;
             y = n % 10;
-            if (y < x)
+            if (y < x) {
                 z = false;
-        }
-        if (z)
-            pt << true;
-        else
-            pt << false;
+                break;
+            }
+        }pt << z;
+        
 }
